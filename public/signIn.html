@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn</title>
+    <link rel="stylesheet" href="css/styleWelcome.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ddk7pmd.css" />
+  </head>
+  <body>
+    <section id="SignInPage">
+      <div class="logoImageSignIn">
+        <img src="images/logo.jpeg" />
+      </div>
+      <div class="btnSignContainer">
+        <button class="btnsignInPage selectedButton">Sign In</button>
+        <a href="signUp.html"><button class="btnsignInPage">Sign Up</button></a>
+      </div>
+      <form action="/login" method="POST">
+        <div class="formContainerSignIn">
+          <input type="email" placeholder="Email" name="email" required/>
+          <input type="password" placeholder="Password" name="password" required/>
+        </div>
+    
+      <div class="finishSignInBtnContainer">
+          <button type="submit" class="finishSignInBtn">Continue</button>
+        </a>
+        <div class="forgotPassword"><a href="">FORGOT PASSWORD</a></div>
+      </div>
+      </form>
+    </section>
+  </body>
+</html>

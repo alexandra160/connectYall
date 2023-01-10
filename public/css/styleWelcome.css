@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: marigny, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  overflow: hidden;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-left {
+  transform: translateX(-50%);
+  transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.from-right {
+  transform: translateX(50%);
+  transition: transform 1s ease-in, opacity 1s ease-in;
+}
+
+.from-bottom {
+  transform: translateY(50%);
+  transition: transform 1s ease-in, opacity 1s ease-in;
+}
+
+.from-bottom.appear,
+.from-right.appear,
+.from-left.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+#welcomeSection {
+  background-image: url("../images/welcomeImg.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcomeIntroduction {
+  color: white;
+  text-align: center;
+  padding: 250px 30px;
+}
+
+.welcomeIntroduction p {
+  padding: 16px;
+}
+.signBtn {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+}
+.signBtn p {
+  text-align: center;
+  padding-top: 23px;
+}
+.signIn {
+  background-color: white;
+  height: 140px;
+  border-top-left-radius: 70px;
+  color: #2c0e37;
+}
+.signUp {
+  background-color: #2c0e37;
+  height: 70px;
+  border-top-left-radius: 90px;
+  color: white;
+}
+
+/* SignUpPage */
+.selectedButton {
+  border-radius: 45px;
+  background-color: #dd7e93 !important;
+  color: white !important;
+}
+#SignUpPage {
+  background-color: white;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.logoImageSignUp,
+.logoImageSignIn {
+  text-align: center;
+  padding: 20px;
+}
+.logoImageSignUp img {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.btnSignContainer {
+  text-align: center;
+}
+.btnsignUpPage,
+.btnsignInPage {
+  width: 90px;
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  background: none;
+}
+.btnsignUpPage {
+  color: #2c0e37;
+}
+
+.formContainerSignUp {
+  padding: 40px;
+}
+
+.formContainerSignUp input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+  display: inline-block;
+  border-width: 0 0 1px 0;
+  border-color: rgb(221, 221, 221, 1);
+  background: none;
+  color: #2c0e37;
+  outline: none;
+  font-size: 15px;
+}
+
+.formContainerSignUp input::placeholder {
+  color: rgb(221, 221, 221);
+}
+
+.formContainerSignUp input:focus {
+  border-color: #2c0e37;
+}
+.addProfilePicture {
+  width: 130px;
+  border-radius: 15px;
+  border: 1px solid #2c0e37;
+  padding: 10px;
+  margin: 20px 40px;
+  text-decoration: none;
+  color: #2c0e37;
+  background-color: white;
+}
+.finishSignUpBtn {
+  width: 200px;
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  background: #dd7e93;
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -100px;
+}
+
+/* SignInPage */
+#SignInPage {
+  background-color: white;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.logoImageSignIn img {
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btnsignInPage {
+  color: #2c0e37;
+}
+
+.formContainerSignIn {
+  padding: 40px;
+}
+
+.formContainerSignIn input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+  display: inline-block;
+  border-width: 0 0 1px 0;
+  border-color: rgb(221, 221, 221, 1);
+  background: none;
+  color: #2c0e37;
+  outline: none;
+  font-size: 15px;
+}
+
+.formContainerSignIn input::placeholder {
+  color: rgb(221, 221, 221);
+}
+
+.formContainerSignIn input:focus {
+  border-color: #2c0e37;
+}
+
+.finishSignInBtnContainer {
+  text-align: center;
+}
+.finishSignInBtn {
+  width: 200px;
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #dd7e93;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  margin-left: -100px;
+}
+.forgotPassword {
+  text-align: center;
+}
+
+.forgotPassword a {
+  color: #dd7e93;
+  font-size: 10px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -50px;
+}

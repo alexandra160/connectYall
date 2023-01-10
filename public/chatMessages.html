@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messages</title>
+    <link rel="stylesheet" href="css/styleChat.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section id="messagesPage">
+      <div class="chat">
+        <a href="yourChats.html">
+          <svg
+            class="arrowBack"
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            viewBox="0 0 25 25"
+          >
+            <path
+              id="Icon_awesome-arrow-circle-left"
+              data-name="Icon awesome-arrow-circle-left"
+              d="M13.063,25.563a12.5,12.5,0,1,1,12.5-12.5A12.5,12.5,0,0,1,13.063,25.563Zm1.457-7.238-3.805-3.649h9.2a1.207,1.207,0,0,0,1.21-1.21v-.806a1.207,1.207,0,0,0-1.21-1.21h-9.2L14.519,7.8a1.211,1.211,0,0,0,.02-1.729l-.554-.549a1.2,1.2,0,0,0-1.709,0L5.588,12.206a1.2,1.2,0,0,0,0,1.709L12.276,20.6a1.2,1.2,0,0,0,1.709,0l.554-.549A1.211,1.211,0,0,0,14.519,18.325Z"
+              transform="translate(-0.563 -0.563)"
+            />
+          </svg>
+        </a>
+
+        <a href="friend_profile_unlocked.html">
+          <div class="chatName inline bar">
+            <div class="image carlos"></div>
+            <div class="name">Carlos</div>
+            <div class="descriptionChat">Male 24, Eindhoven</div>
+          </div>
+        </a>
+
+        <div class="commonHobbiesMessages">
+          <p>These are the common hobbies:</p>
+          <img class="commonHobbies" src="images/piano.jpeg" />
+          <img class="commonHobbies" src="images/hobbies/cooking.png" />
+          <img class="commonHobbies" src="images/running.jpeg" />
+        </div>
+
+        <div class="messages">
+          <div class="message girl">Hey! What's up? 👋</div>
+          <div class="message user">Kid, where'd you come from?</div>
+          <div class="message girl">Field trip! 🤣</div>
+          <div class="message user">
+            Uh, what is this guy's problem, Mr. Stark? 🤔
+          </div>
+        </div>
+        <div class="chatImage">
+          <img src="images/chat.png" alt="" />
+        </div>
+        <div class="input">
+          <i class="far fa-laugh-beam icons"></i><input type="text" />
+          <p>Message</p>
+          <i class="fas fa-microphone microphone"></i>
+        </div>
+        <!-- menu -->
+
+        <div id="menu">
+          <div id="menu-bar" onclick="menuOnClick()">
+            <div id="bar1" class="barMenu"></div>
+            <div id="bar2" class="barMenu"></div>
+            <div id="bar3" class="barMenu"></div>
+          </div>
+          <nav class="nav" id="nav">
+            <ul>
+              <li><a href="#">Report</a></li>
+              <li><a href="#">Block</a></li>
+              <li><a href="#">Unfriend</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="menu-bg" id="menu-bg"></div>
+      </div>
+    </section>
+
+    <script src="chatMessages.js"></script>
+  </body>
+</html>
