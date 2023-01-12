@@ -1,7 +1,7 @@
 const express = require ('express');
 const port = process.env.PORT || 3000; //port
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/";
+var url = "mongodb+srv://connectYall:connectYallDB@cluster0.shqccfi.mongodb.net/?retryWrites=true&w=majority";
 const fs = require('fs');
 const users_notfrends=[];
 /*if (!fs.existsSync('public/users.json')) {
