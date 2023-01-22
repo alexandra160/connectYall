@@ -169,7 +169,26 @@ element::-webkit-scrollbar {
   margin-left: 135px;
   z-index: 2;
 }
-
+/*#imgHobby1{
+   height: 20vh;
+   width: 40vw;
+   margin-top: 10vh;
+   margin-left: 28vh;
+   border-radius: 20px;
+   box-shadow: 5px 5px 17px #a1a1a1,
+              -5px -5px 17px #ffffff;
+   position: absolute;
+}
+#imgHobby2{
+   height: 20vh;
+   width: 40vw;
+   margin-top: 10vh;
+   margin-left: 56vh;
+   border-radius: 20px;
+   box-shadow: 5px 5px 17px #a1a1a1,
+              -5px -5px 17px #ffffff;
+   position: absolute;
+}*/
 .scrollContainer {
   scroll-snap-type: x mandatory;
   display: flex;
@@ -192,26 +211,36 @@ element::-webkit-scrollbar {
   top: -140px;
 }
 .weekMatches {
+  padding-top: 100px;
+  padding-bottom: 500px;
   background-color: #2c0e37;
   width: 100vw;
   height: 60vh;
+}
 
-  position: relative;
+.weekMatches h3 {
+  color: white;
+  letter-spacing: 3px;
+  font-size: 1.5em;
+  margin-left: 50px;
 }
 #matchText {
   color: #cfb9d9;
-  margin-top: -70vh;
+  margin-top: -20vh;
 }
 /*css for hobby match*/
-
+.containerFriends {
+}
 .hobbyContainer {
-  border: white;
+  width: 100vw;
+  margin-top: 100px;
   position: relative;
+  border: white;
+  position: absolute;
   text-align: center;
   color: white;
-  margin-top: -45vh;
-  margin-left: -8vw;
   display: none;
+  z-index: 1;
 }
 
 .hobby img {
@@ -261,16 +290,17 @@ div.bottom {
 
 .hobbyContainer h3 {
   margin-top: 10px;
+  margin-left: 0 !important;
 }
 
 .prev,
 .next {
+  z-index: 2;
   cursor: pointer;
   position: absolute;
-  top: 20%;
+  margin-top: 50%;
   width: auto;
-  padding: 10px;
-  margin-top: 5vh;
+  margin-left: 2px;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -280,11 +310,11 @@ div.bottom {
 }
 
 .next {
-  right: 25px;
   border-radius: 3px 0 0 3px;
+  right: 5px;
 }
 .prev {
-  left: -5px;
+  left: 5px;
 }
 
 /*Settings page*/
